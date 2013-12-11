@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  h1= title
+  p The first box performs a search.  If something is found it will replace whatever is in the search box with whatever is in the replace box. If there is nothing in the replace box it will remove the item.
+  form#formEditItem(name="edititem",method="post",action="/edititem")
+        input#inputSearch(type="text", placeholder="search box", name="search")
+        input#inputReplace(type="text", placeholder="replacement box", name="replace")
+        button#btnSubmit(type="submit") submit

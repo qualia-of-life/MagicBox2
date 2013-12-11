@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  h1= title
+  p Put whatever you want in this amazing and mysterious box...
+  form#formAddItem(name="additem",method="post",action="/additem")
+        input#inputItemName(type="text", placeholder="item", name="item")
+        
+        button#btnSubmit(type="submit") submit

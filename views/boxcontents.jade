@@ -1,0 +1,9 @@
+extends layout
+
+block content
+    h1.
+        Stuff in the Box
+    ul
+        each thing, i in boxcontents
+            li
+                a(href="magicboxreplace")= thing.item
